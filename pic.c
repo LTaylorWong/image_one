@@ -16,8 +16,8 @@ int main(){
   
   srand((unsigned) time(&t));
   n = rand() % 100;
-  n2 = rand()% 100;
-  n3 = rand()% 100;
+  n2 = rand()% 200;
+  n3 = rand()% 150;
   
   xres = 500;
   yres = 500;
