@@ -6,7 +6,7 @@
 
 int main(){
 
-  int r, g, b, x, y, n;
+  int r, g, b, x, y, n, n2, n3;
   int file;
   int xres, yres;
   int max_c = 255;
@@ -16,6 +16,8 @@ int main(){
   
   srand((unsigned) time(&t));
   n = rand() % 100;
+  n2 = rand()% 100;
+  n3 = rand()% 100;
   
   xres = 500;
   yres = 500;
@@ -26,9 +28,9 @@ int main(){
   write(file, header, strlen(header));
   for(y = 0;y<yres; y++){
     for (x = 0;x<xres; x++){
-      r = 255;
-      g = r % n;
-      b = r / n;
+      r = max_c % n;
+      g = max_c % n;
+      b = max_c % n;
       sprintf(line, "%d %d %d ", r , g, b);
       write(file, line, strlen(line));
     }
