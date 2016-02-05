@@ -18,8 +18,8 @@ int main(){
   n = rand() % 3;
   
   //r = 255;
-  xres = 100;
-  yres = 100;
+  xres = 500;
+  yres = 500;
   
   file = open("pic.ppm", O_CREAT|O_WRONLY|O_RDONLY);
   
@@ -27,7 +27,7 @@ int main(){
   write(file, header, strlen(header));
   for(y = 0;y<yres; y++){
     for (x = 0;x<xres; x++){
-      r = 255;
+      r = 255 + x;
       g = x;
       b = y;
       sprintf(line, "%d %d %d ", r , g, b);
