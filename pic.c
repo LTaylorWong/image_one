@@ -29,8 +29,8 @@ int main(){
   for(y = 0;y<yres; y++){
     for (x = 0;x<xres; x++){
       r = max_c % n;
-      g = max_c % n;
-      b = max_c % n;
+      g = max_c % n2;
+      b = max_c % n3;
       sprintf(line, "%d %d %d ", r , g, b);
       write(file, line, strlen(line));
     }
