@@ -25,13 +25,13 @@ int main(){
   
   sprintf(header, "P3 \n %i,%i \n %i \n", xres, yres, max_c);
   write(file, header, strlen(header));
-  for(x = 0;x<xres; x++){
-    for (y = 0;y<yres; y++){
+  for(y = 0;y<yres; y++){
+    for (x = 0;x<xres; x++){
       r = 255;
       g = x;
       b = y;
       sprintf(line, "%d %d %d ", r , g, b);
-      sprintf(line, "\n");
+      sprintf(line, "%s\n", line);
       write(file, line, strlen(line));
     }
   }
