@@ -9,7 +9,7 @@ int main(){
   int r, g, b, x, y, n;
   int file;
   int xres, yres;
-  int max_c;
+  int max_c = 255;
   char line[100];
   char header[100];
   time_t t;
