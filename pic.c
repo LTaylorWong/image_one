@@ -22,7 +22,7 @@ int main(){
   write(file, header, strlen(header));
   for(y = 0;y<yres; y++){
     for (x = 0;x<xres; x++){
-      r = 255 - y;
+      r = 255;
       g = (x * x)+ (5 * y);
       b = y;
       sprintf(line, "%d %d %d ", r , g, b);
