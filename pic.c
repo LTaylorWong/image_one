@@ -31,9 +31,9 @@ int main(){
       g = x;
       b = y;
       sprintf(line, "%d %d %d ", r , g, b);
-      sprintf(line, "%s\n", line);
-      write(file, line, strlen(line));
     }
+    sprintf(line, "%s\n", line);
+    write(file, line, strlen(line));
   }
   close(file);  
 }
