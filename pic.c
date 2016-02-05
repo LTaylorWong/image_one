@@ -31,7 +31,7 @@ int main(){
       g += n;
       b += n;
       sprintf(line, "%d %d %d", r , g, b);
-      printf("%s\n", line);
+      //printf("%s\n", line);
       write(file, line, strlen(line));
     }
   }
