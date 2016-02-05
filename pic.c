@@ -15,9 +15,8 @@ int main(){
   time_t t;
   
   srand((unsigned) time(&t));
-  n = rand() % 3;
+  n = rand() % 100;
   
-  //r = 255;
   xres = 500;
   yres = 500;
   
@@ -27,7 +26,7 @@ int main(){
   write(file, header, strlen(header));
   for(y = 0;y<yres; y++){
     for (x = 0;x<xres; x++){
-      r = 255 + x;
+      r = 255 + n;
       g = x;
       b = y;
       sprintf(line, "%d %d %d ", r , g, b);
