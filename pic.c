@@ -11,7 +11,7 @@ int main(){
   int max_c;
   //char buff[100];
   
-  time_t;
+  time_t t;
   srand((unsigned) time(&t));
   n = rand() % 3
     
