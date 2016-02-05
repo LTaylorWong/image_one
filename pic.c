@@ -23,15 +23,15 @@ int main(){
   
   file = open("pic.ppm", O_CREAT|O_WRONLY|O_RDONLY);
   
-  sprintf(header, "P3 \n %i,%i \n %i", xres, yres, max_c);
+  sprintf(header, "P3 \n %i,%i \n %i \n", xres, yres, max_c);
   write(file, header, strlen(header));
   for(x = 0;x<100; x++){
     for (y = 0;y<100; y++){
       r = 255;
       g += n;
       b += n;
-      sprintf(line, "&d, &d, &d", r , g, b);
-      printf("%s\n", line);
+      sprintf(line, "&d, &d, &d \n", r , g, b);
+      //printf("%s\n", line);
       write(file, line, strlen(line));
     }
   }
