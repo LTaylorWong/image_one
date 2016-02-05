@@ -28,7 +28,7 @@ int main(){
     for (x = 0;x<xres; x++){
       r = 255;
       g = r % n;
-      b = y;
+      b = r / n;
       sprintf(line, "%d %d %d ", r , g, b);
       write(file, line, strlen(line));
     }
