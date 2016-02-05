@@ -28,9 +28,9 @@ int main(){
   for(x = 0;x<xres; x++){
     for (y = 0;y<yres; y++){
       r = 255;
-      g = n;
-      b = n;
-      sprintf(line, "%d %d %d", r , g, b);
+      g = x;
+      b = y;
+      sprintf(line, "%d %d %d ", r , g, b);
       //printf("%s\n", line);
       write(file, line, strlen(line));
     }
