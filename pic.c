@@ -30,8 +30,8 @@ int main(){
       r = 255;
       g += n;
       b += n;
-      sprintf(line, "&d &d &d", r , g, b);
-      //printf("%s\n", line);
+      sprintf(line, "%d %d %d", r , g, b);
+      printf("%s\n", line);
       write(file, line, strlen(line));
     }
   }
